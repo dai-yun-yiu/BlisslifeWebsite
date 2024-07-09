@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Event</title>
+        <!--Logo Reference: https://logo.com/-->
+        <link rel="icon" href="media/logo.png" type="image/png">
+        <link rel="stylesheet" href="css/general_style.css">
+        <link rel="stylesheet" href="css/event.css">
+        <!--font-awesome: https://fontawesome.com/-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <!--Google Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body> 
+        <header class="header-bar">
+            <div class="company-name">
+                <a href="index.html">
+                     <!--Logo Reference: https://logo.com/-->
+                    <img src="media/logo.png" alt="BlissLife Logo">
+                </a>
+                <a href="index.html">BlissLife</a>
+            </div>
+            <div class="search-box">
+                <input type="text" id="searchInput" aria-label="Search" placeholder="Search">
+                <i id="searchIcon" class="fas fa-search"></i>
+            </div>
+            <nav class="navigation"> 
+                <ul>
+                    <li><a href="index.html"><button class="nav-button" aria-label="Go to Homepage">Home</button></a></li>
+                    <li><a href="event.html"><button class="nav-button" aria-label="Go to Event page">Event</button></a></li>
+                    <li><a href="blog.html"><button class="nav-button"  aria-label="Go to Blog page">Blog</button></a></li>
+                    <li><a href="about.html"><button class="nav-button" aria-label="Go to About page">About</button></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="banner-container">
+                <div class="banner-slide">
+                    <div class="slide">
+                        <div class="slide-title">
+                            <h2>Morning Forest Stroll</h2>
+                            <a href="eventdetail.html">Explore</a>
+                        </div>
+                        <img src="media/event-people laughing.jpg" alt="Image of Slide1 about people laughing">
+                        <!--Media Reference: https://unsplash.com/photos/nF8xhLMmg0c-->
+                    </div>
+                    <div class="slide">
+                        <div class="slide-title">
+                            <h2>Morning Cycle</h2>
+                            <a href="eventdetail.html">Explore</a>
+                        </div>
+                        <img src="media/event-cycle.jpg" alt="Image of Slide1 about cycling">
+                        <!--Media Reference: https://unsplash.com/photos/vpZC61rjDzU-->
+                    </div>
+                    <div class="slide">
+                        <div class="slide-title">
+                            <h2>Lake Walk</h2>
+                            <a href="eventdetail.html">Explore</a>
+                        </div>
+                        <img src="media/event-lakewalk.jpg" alt="Image of Slide1 about lake walk">
+                        <!--Media Reference: https://unsplash.com/photos/PnFAa1ro9b0-->
+                    </div>
+                </div>
+                <div class="dots">
+                    <span class="dot" tabindex="0" role="button" aria-label="First Slide"></span>
+                    <span class="dot" tabindex="0" role="button" aria-label="Second Slide"></span>
+                    <span class="dot" tabindex="0" role="button" aria-label="Third Slide"></span>
+                </div>
+            </div>
+            <div class="main-content" id="main"> 
+                <div class="header-container">
+                    <div class="left-header-container">
+                        <div class="page-title">
+                            <h1>Event</h1>
+                        </div>
+                    </div>
+                    <div class="right-header-container">
+                        <div class="dropdown">
+                            <label for="event-type">Event Type:</label>
+                            <select id="event-type">
+                                <option value="All">All</option>
+                                <option value="Workshop">Workshop</option>
+                                <option value="Seminar">Seminar</option>
+                                <option value="Group Activity">Group Activity</option>
+                                <option value="Webinar">Webinar</option>
+                            </select>
+                        </div>
+                        <button class="add-button">Add</button>
+                        <div class="popup-modal-container">
+                            <div class="modal-content">
+                                <div class="form-title" style="text-align: center; font-weight: bold;">
+                                    <h3>Add Your Event</h3>
+                                </div>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="name">Event Name:</label><br>
+                                        <input type="text" id="name" name="name" required aria-required="true">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="location">Location:</label><br>
+                                        <input type="text" id="location" name="location" required aria-required="true">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="organiser">Organiser:</label><br>
+                                        <input type="text" id="organiser" name="organiser" required aria-required="true">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="event_type">Event Type:</label><br>
+                                        <select id="event_type" required aria-required="true">
+                                            <option value="Workshop">Workshop</option>
+                                            <option value="Seminar">Seminar</option>
+                                            <option value="Group Activity">Group Activity</option>
+                                            <option value="Webinar">Webinar</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="description">Description:</label><br>
+                                        <input type="text" id="description" name="description" required aria-required="true">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="date_time">Date&Time:</label><br>
+                                        <input type="datetime-local" id="date_time" name="date_time" required aria-required="true">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="photo">Photo:</label><br>
+                                        <input type="file" id="photo" name="photo" aria-label="Upload Event Photo">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="website_code">Website Code:</label><br>
+                                        <input type="text" id="website_code" name="website_code" required aria-required="true">
+                                    </div>
+                                    <button class="cancel-button" aria-label="Cancel Event Submission">Cancel</button>
+                                    <button type="submit" class="submit-button" aria-label="Submit Event Form">Submit</button>
+                                </form>
+
+                            </div>
+                        
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="card-container" id="CardContainer">
+                </div>
+                <div class="pagination-container" id="pagination-buttons">
+
+                </div>
+                
+            </div>
+        </main>
+        <footer>
+            <div class="footer-col" aria-label="BlissLife information">
+                <h4>BlissLife</h4>
+                <p>A Non-profit Organization dedicated to help people pursuit wellness. </p>
+            </div>
+            <div class="footer-col" aria-label="Useful links">
+                <h4>Links</h4>
+                <ul class="footer-link" >
+                    <li><a href="accessibility.html">Accessibility Help</a></li>
+                    <li><a href="about.html">Career</a></li>
+                </ul>
+            </div>
+            <div class="footer-col" aria-label="Contact email">               
+                <h4>Contact</h4>
+                <ul class="footer-link" >
+                    <li><a href = "mailto: contact@blisslife.com">contact@blisslife.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">                
+                <h4>Newsletter</h4>
+                <div class="newsletter-button" aria-label="Email Subscription">
+                    <input type="text" aria-label="Email address" placeholder="Email address" name="mail" required>
+                    <input type="submit" aria-label="Subscribe Button" value="Subscribe">
+                </div>
+            </div>
+        </footer>
+        <script src="js/event.js"></script>
+    </body>
+</html>
+

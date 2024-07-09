@@ -1,0 +1,359 @@
+body {
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    display: block;
+    font-size: 3.25rem;
+    margin-block-start: 0.83em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h2 {
+    display: block;
+    font-size: 2.5rem;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h3 {
+    display: block;
+    font-size: 2rem;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+p {
+    display: block;
+    font-size: 1.5rem;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+}
+
+
+
+/* Main header styles */
+.header-bar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #172041; 
+    color: #fff; 
+    padding: 0px 20px; 
+    z-index: 100; 
+}
+
+/* Company name styles */
+.company-name {
+    max-width: 200px; 
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-name img {
+    width: 100%;
+    height: auto; 
+    object-fit: contain; 
+    max-height: 30px;
+    margin-right: 15px;
+}
+
+
+.company-name a {
+    display: block;
+    font-size: 24px;
+    text-decoration: none; 
+    color: white; 
+    font-weight: bold; 
+    
+}
+
+
+/* Navigation styles */
+.navigation {
+    display: flex;
+    box-sizing: border-box;
+    background-color:#172041;
+    flex: auto;
+    justify-content: flex-end;
+  
+}
+
+.navigation a {
+    text-decoration: none;  /* remove underline */
+    color: white; 
+    font-weight: bold; 
+}
+
+.nav-button {
+    background-color: #172041; 
+    color: white; 
+    padding: 10px 10px; 
+    border: none; 
+    cursor: pointer; /*hand-clickable*/
+    text-decoration: none; /* remove underline */
+    font-size: 18px;
+}
+
+
+.navigation li {
+    display: inline-block; /* Display list items horizontally */
+    background-color: #172041;
+    color:white;
+    margin-right: 15px; 
+    text-align: center;
+}
+
+.navigation ul {
+    display: flex; 
+    list-style-type: none; /*remove the default bullets*/
+    padding: 0; /* remove default padding */
+}
+
+.nav-button:hover{
+    color:rgb(255, 255, 159)
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    justify-content: space-between;
+    background-color: #172041; 
+    color: #fff; 
+    padding: 3%; 
+}
+
+
+.footer-col{
+    width:25%;
+   
+}
+
+.footer-col h4{
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.footer-col p{
+    font-size:1.2rem;
+    margin-right: 10%;
+}
+
+.footer-col h4::before{
+    content: "";
+    position: absolute;
+    left:0;
+    bottom:-6px;
+    background-color: #27c0ac;
+    height: 2px;
+    width:40px;
+}
+
+.footer-link ul li:not(:last-child){
+    margin-bottom: 8px
+}
+
+
+.footer-link {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+.footer-link a, .footer-link li{
+    display: block;
+    font-size: 1.2rem;
+    color:#fff;
+    text-decoration: none; 
+    transition: 0.4s;
+    font-weight: bold; 
+    word-wrap: break-word;
+    
+}
+
+footer .footer-link a:hover {
+    color: rgb(255, 255, 159);
+}
+
+
+/* Newsletter Style the input elements and the submit button */
+input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 20px;
+    color: #980000;
+    background-color: white;
+
+}
+
+.newsletter-button{
+    margin-top: 10px;
+    max-width: 250px;
+}
+
+
+/*lightbox*/
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 101;
+}
+
+.lightbox-content-container {
+    max-width: 90%; /*responsive*/
+    max-height: 90%;
+    overflow: auto; 
+}
+
+.lightbox-content {
+    width: 100%;
+    height: auto;
+}
+
+/*search box*/
+.search-box {
+    position: relative;
+    display: inline-block;
+}
+
+.search-box input[type=text] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-left: 10%;
+    border-radius: 25px;
+}
+
+
+#searchInput {
+    padding-right: 40px; 
+}
+
+#searchIcon {
+    position: absolute;
+    right: 0px; 
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #172041;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .company-name{
+        margin-top: 3vw;
+    }
+
+   
+    .header-bar{
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .navigation {
+        justify-content: center; 
+    }
+
+    .footer{
+        padding: 25px 5%;
+    }
+
+
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .footer-col p{
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    /*Newsletter Button Be Center*/
+    .newsletter-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+
+
+    .footer-col h4::before{
+        all:unset;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+    .inner-content li a {
+        font-size: 1rem;
+    }
+
+    .footer-link a, .footer-link li{
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+   
+    .search-box input[type=text] {
+        margin-left: 5%;
+        
+    }
+    
+}
+
+

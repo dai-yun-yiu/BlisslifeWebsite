@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> BlissLife Homepage </title>
+        <!--Logo Reference: https://logo.com/-->
+        <link rel="icon" href="media/logo.png" type="image/png">
+        <link rel="stylesheet" href="css/general_style.css">
+        <link rel="stylesheet" href="css/homepage.css">
+        <!--Google Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <!--font-awesome: https://fontawesome.com/-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+    <body>
+        <header class="header-bar">
+            <div class="company-name">
+                <a href="index.html">
+                     <!--Logo Reference: https://logo.com/-->
+                    <img src="media/logo.png" alt="BlissLife Logo">
+                </a>
+                <a href="index.html">BlissLife</a>
+            </div>
+            <div class="search-box">
+                <input type="text" id="searchInput" aria-label="Search" placeholder="Search">
+                <i id="searchIcon" class="fas fa-search"></i>
+            </div>
+            <nav class="navigation"> 
+                <ul>
+                    <li><a href="index.html"><button class="nav-button" aria-label="Go to Homepage">Home</button></a></li>
+                    <li><a href="event.html"><button class="nav-button" aria-label="Go to Event page">Event</button></a></li>
+                    <li><a href="blog.html"><button class="nav-button"  aria-label="Go to Blog page">Blog</button></a></li>
+                    <li><a href="about.html"><button class="nav-button" aria-label="Go to About page">About</button></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main role="main">
+            <div class="banner-container" role="banner">
+                <div class="banner-content">
+                    <h1>Build Your Healthy Life</h1>
+                    <div class="explore">
+                        <a  role="button" class="explore-button" href="event.html" aria-pressed="false">Event</a>
+                        <a  role="button" class="explore-button" href="blog.html" aria-pressed="false">Blog</a>
+                    </div>
+                    <div class="horizontal-container">
+                        <div class="vertical-container">
+                            <div class="block">50+ Events</div>
+                        </div>
+                        <div class="vertical-container">
+                            <div class="block">100+ Articles</div>                
+                        </div>
+                        <div class="vertical-container">
+                            <div class="block">10,000+ Users</div>                 
+                        </div>
+                    </div>
+                </div>
+                <div class="hero"> <!--Media Reference: https://www.youtube.com/watch?v=znqUwx0b0HI&ab_channel=GreatStack-->
+                    <video autoplay loop muted playsinline class="back-video">
+                        <source src="media/video-run.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="mission" aria-labelledby="mission-title">
+                <div class="mission-title">
+                    <h2 id="mission-title">Our Mission</h2>
+                </div>
+                <div class="mission-container">
+                    <div class="image-block"  aria-describedby="inspire-description">
+                        <img src="media/hompage-hand-toward-sun.jpg" alt="Image of hand toward sun"> <!--Media Reference: https://unsplash.com/photos/W0jzK552m8E-->
+                        <div class="overlay"></div>
+                        <div class="mission-text">
+                            <h3 id="inspire-description">Inspire People to Live with Happiness</h3>
+                        </div>
+                    </div>
+                    <div class="image-block"  aria-describedby="build-description">
+                        <img src="media/hompage-hands.jpg" alt="Image of cooperation"> <!--Media Reference: https://unsplash.com/photos/Zyx1bK9mqmA-->
+                        <div class="overlay"></div>
+                        <div class="mission-text">
+                            <h3 id="build-description">Build Community to Unite People</h3>
+                        </div>
+                    </div>
+                    <div class="image-block"  aria-describedby="provide-description">
+                        <img src="media/hompage-computer.jpg" alt="Image of Internet"> <!--Media Reference: https://unsplash.com/photos/tMI2_-r5Nfo-->
+                        <div class="overlay"></div>
+                        <div class="mission-text">
+                            <h3 id="provide-description">Provide Professional Suggestion</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="services">
+                <div class="services-title" aria-labelledby="servies-title">
+                    <h2 id="mission-title">Explore Our Services</h2>
+                </div>
+                <div class="services-container">
+                    <div class="services-left">
+                        <div class="grid-item">
+                            <img src="media/homepage-coffee.jpg" alt="Image 1 about top view of opened magazine near up of coffee"> <!--Media Reference: https://unsplash.com/photos/VFs2fZEVkXo-->>
+                        </div>
+                        <div class="grid-item">
+                            <img src="media/homepage-park.jpg" class="services-img" alt="Image 2 about blue and white ceramic table decor on brown wooden table"> <!--Media Reference: https://unsplash.com/photos/GYQuKGktCt4-->>
+                        </div>
+                        <div class="grid-item">
+                            <img src="media/homepage-fourhands.jpg" class="services-img" alt="Image 3 about person in black long sleeve shirt holding persons hand"> <!--Media Reference: https://unsplash.com/photos/Y5bvRlcCx8k-->>
+                        </div>
+                       
+                    </div>
+                    <div class="services-right">
+                        <div class="content-box" aria-labelledby="wellness-blog-title" aria-describedby="wellness-blog-desc">
+                            <h3 id="wellness-blog-title">Wellness Blog</h3>
+                            <p id="wellness-blog-desc">Discover experts' professional suggestion and updated knowledge in health, happiness and wellness. Find inspiration, explore harmonious practices and live the healthier life. </p>
+                            <a href="blog.html">Read Articles</a>
+                        </div>
+                        <div class="content-box" aria-labelledby="engaging-events-title" aria-describedby="engaging-events-desc">
+                            <h3 id="engaging-events-title">Engaging Events</h3>
+                            <p id="engaging-events-desc">Explore something extraordinary and make like-minded friends to boost your happiness. Dive deep into wellness topics and interact with people to enhance your skills.</p>
+                            <a href="event.html">Join Events</a>
+                        </div>
+                        <div class="content-box" aria-labelledby="expert-support-title" aria-describedby="expert-support-desc">
+                            <h3 id="expert-support-title">Expert Support</h3>
+                            <p id="expert-support-desc">Need any support? We provide consulting events that you can meet professional consultants and doctors. If you can find nothing tailored your need, we welcome your suggestions.</p>
+                            <a href="event.html">Gain Support</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="review">
+                <div class="review-title" aria-labelledby="review-title">
+                    <h2 id="review-title">User Reviews</h2>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="review-text" aria-describedby="review1-desc">
+                            <p id="review1-desc">Love this platform where I make a lot of like-minded friends in various events.<p>
+                        </div>
+                        <div class="user-info">
+                            <p>⎯ Emma Del</p>
+                        </div>
+                        <div class="star-rating">
+                            ★★★★★
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="review-text" aria-describedby="review2-desc">
+                            <p id="review2-desc">Learn wellness knowledge and start pracicing to live healthier lifestyle.</p>
+                        </div>
+                        <div class="user-info">
+                            <p>⎯ Steve Lin</p>
+                        </div>
+                        <div class="star-rating">
+                            ★★★★★
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="review-text" aria-describedby="review3-desc">
+                            <p id="review3-desc">It's the most reliable and trustworthy website delivering various topics.</p>
+                        </div>
+                        <div class="user-info">
+                            <p>⎯ Ke Fu Chou</p>
+                        </div>
+                        <div class="star-rating">
+                            ★★★★★
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="review-text" aria-describedby="review4-desc">
+                            <p id="review4-desc">BlissLife is not just a content platform, but also an excellent event creator.</p>
+                        </div>
+                        <div class="user-info">
+                            <p>⎯ Nina Wen</p>
+                        </div>
+                        <div class="star-rating">
+                            ★★★★★
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="newsletter-banner">
+                <div class="container">
+                    <div class="left-content">
+                        <h2>Newsletter</h2>
+                        <h3>Keep in touch with us!<h3>
+                    </div>
+                    <div class="right-content">
+                        <input id="home-news1" type="text" aria-label="Email address" placeholder="Email address" name="mail" required>
+                        <input  id="home-news2" type="submit" aria-label="Subscribe Button" value="Subscribe">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-col" aria-label="BlissLife information">
+                <h4>BlissLife</h4>
+                <p>A Non-profit Organization dedicated to help people pursuit wellness. </p>
+            </div>
+            <div class="footer-col" aria-label="Useful links">
+                <h4>Links</h4>
+                <ul class="footer-link" >
+                    <li><a href="accessibility.html">Accessibility Help</a></li>
+                    <li><a href="about.html">Career</a></li>
+                </ul>
+            </div>
+            <div class="footer-col" aria-label="Contact email">               
+                <h4>Contact</h4>
+                <ul class="footer-link" >
+                    <li><a href = "mailto: contact@blisslife.com">contact@blisslife.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">                
+                <h4>Newsletter</h4>
+                <div class="newsletter-button" aria-label="Email Subscription">
+                    <input type="text" aria-label="Email address" placeholder="Email address" name="mail" required>
+                    <input type="submit" aria-label="Subscribe Button" value="Subscribe">
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+    

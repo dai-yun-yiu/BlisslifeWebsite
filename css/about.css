@@ -1,0 +1,231 @@
+.banner {
+    position: relative;
+    max-width: 100%;
+    max-height: 650px; 
+    overflow: hidden; 
+}
+
+
+.banner img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    max-height: 100%; 
+}
+
+.mask::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(30, 30, 30, 0.5); 
+}
+
+.text-container {
+    color: white;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 0; /* container located img's left  */
+    transform: translate(0, -50%); /* vertically center */
+    max-width: 80%;
+    text-align: left; 
+    margin-left: 7%;
+}
+
+.story {
+    padding: 6%;
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+/*mission, team, join sessions*/
+.mission, .team, .join{
+    padding: 6%;
+    text-align: center;
+}
+
+/*Mission session*/
+
+.mission-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 10px;
+}
+
+.image-block {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 10px; 
+}
+
+.image-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 10%;
+}
+
+.mission-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/*Team session*/
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+    
+}
+
+.team-block {
+    width: 300px;
+    text-align: center;
+    margin: 20px;
+}
+
+.circle img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+
+/*Join session*/
+.join-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+}
+
+.join-title {
+    flex: 2.5; 
+    display: flex; 
+    flex-direction: column; /* vertical */
+    justify-content: flex-start; /* Align vertically upward */
+    align-items: flex-start; /* Align horizontally to the left */
+    text-align: left; 
+    padding: 5%;
+    
+    
+}
+
+.join-title h1{
+    text-align: left;
+}
+
+
+
+.join-img {
+    display: flex;
+    flex: 3;
+    position: relative;
+    padding: 5%;
+    position: relative; 
+    overflow: hidden;
+    border-radius: 15px;
+    max-height: 300px;
+    
+    
+}
+
+
+
+.join-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    
+    
+    
+}
+
+
+.join-button {
+    width: 30vw;
+    height: 50px;
+    border-radius: 100px;; 
+    background-color: #990001;; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    font-size: 18px; 
+    text-decoration: none;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    border: none;     
+}
+
+
+
+@media screen and (max-width: 850px) {
+
+    .join-container {
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    /*Join session become vertical layout*/
+    .join-title {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        width: 100%;
+        padding: 0%;
+    }
+    
+    .join-img{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        width: 100%;
+        padding: 0%;
+        
+    }
+
+    .join-img img{
+        height: 300px;
+        border-radius: 15px;
+    }
+
+}
+
+
